@@ -391,24 +391,23 @@
 
   .pub-item.with-thumb {
     display: grid;
-    grid-template-columns: 126px 1fr;
-    gap: 1rem;
+    grid-template-columns: 220px 1fr;
+    gap: 1.2rem;
     align-items: start;
   }
 
   .pub-thumb {
-    width: 126px;
-    aspect-ratio: 1.08 / 1;
+    width: 220px;
     border: 1px solid var(--border);
     border-radius: 6px;
     overflow: hidden;
-    background: var(--bg-warm);
+    background: #fff;
   }
 
   .pub-thumb img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     display: block;
   }
 
@@ -555,7 +554,7 @@
     }
 
     .pub-thumb {
-      width: min(220px, 100%);
+      width: min(340px, 100%);
     }
 
     .gallery-panel { padding: 2.5rem 1.5rem; }
@@ -583,7 +582,6 @@
   <nav class="sidebar-nav">
     <ul>
       <li><a href="#hero">About</a></li>
-      <li><a href="#personal">Personal</a></li>
       <li><a href="#research">Publications</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
@@ -640,6 +638,33 @@
       <span class="kw">Large Language Models</span>
       <span class="kw">Generative AI</span>
     </div>
+
+<div style="margin-top:1.5rem;">
+      <p class="sec-label" style="margin-bottom:0.8rem;">// Life Outside Research</p>
+      <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+        <span class="kw">✈️ Travel (over 30 countries!)</span>
+        <span class="kw">📷 Photography</span>
+        <span class="kw">🏋️ Gym</span>
+        <span class="kw">⛸️ Ice Skating</span>
+        <span class="kw">🤿 Freediving</span>
+        <span class="kw">🏃 Running</span>
+      </div>
+    </div>
+
+<div style="margin-top:1.2rem;">
+      <p class="sec-label" style="margin-bottom:0.8rem;">// Languages</p>
+      <div style="display:flex; gap:0.5rem;">
+        <span class="kw">
+          <img src="https://flagcdn.com/w20/kr.png" class="flag-icon" alt="South Korea">
+          Korean (Native)
+        </span>
+        
+        <span class="kw">
+          <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="United States">
+          English (Working Proficiency)
+        </span>
+      </div>
+    </div>
   </section>
 
   <!-- ── MOBILE LATEST: shown below About only on small screens ── -->
@@ -669,44 +694,10 @@
   
     </div>
   </section>
-
-  <!-- PERSONAL -->
-  <section id="personal" class="sec reveal">
-    <p class="sec-label">// Personal</p>
-    <h2 class="sec-title">Beyond Research</h2>
-
-    <div>
-      <p class="sec-label" style="margin-bottom:0.8rem;">// Life Outside Research</p>
-      <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
-        <span class="kw">✈️ Travel (over 30 countries!)</span>
-        <span class="kw">📷 Photography</span>
-        <span class="kw">🏋️ Gym</span>
-        <span class="kw">⛸️ Ice Skating</span>
-        <span class="kw">🤿 Freediving</span>
-        <span class="kw">🏃 Running</span>
-      </div>
-    </div>
-    
-    <div style="margin-top:1.2rem;">
-      <p class="sec-label" style="margin-bottom:0.8rem;">// Languages</p>
-      <div style="display:flex; gap:0.5rem;">
-        <span class="kw">
-          <img src="https://flagcdn.com/w20/kr.png" class="flag-icon" alt="South Korea">
-          Korean (Native)
-        </span>
-        
-        <span class="kw">
-          <img src="https://flagcdn.com/w20/us.png" class="flag-icon" alt="United States">
-          English (Working Proficiency)
-        </span>
-      </div>
-    </div>
-  </section>
-
   <!-- PUBLICATIONS & PRESENTATIONS -->
   <section id="research" class="sec reveal">
     <p class="sec-label">// Research &amp; Publications</p>
-    <h2 class="sec-title">Journal Papers</h2>
+    <h2 class="sec-title">Publications</h2>
     <!-- Put thumbnail images in your repo, e.g. images/papers/phase_gnn_thumb.jpg and images/papers/freeform_thumb.jpg -->
 
     <div class="pub-item with-thumb">
@@ -791,6 +782,15 @@
   <h2 class="sec-title">Experience</h2>
 
   <div class="edu-item">
+    <div class="edu-year">May 2026 – Present</div>
+    <div>
+      <div class="edu-degree">The Pennsylvania State University</div>
+      <div class="edu-school">Graduate Research Assistant · University Park, PA, USA</div>
+      <div class="edu-note">Conducting research on AI-driven physics-based modeling for materials and manufacturing systems.</div>
+    </div>
+  </div>
+
+  <div class="edu-item">
     <div class="edu-year">Aug. 2022 – Jul. 2025</div>
     <div>
       <div class="edu-degree">Samsung Electronics</div>
@@ -824,7 +824,7 @@
     <div class="edu-year">Sep. 2019 – Dec. 2019</div>
     <div>
       <div class="edu-degree">KIA Motors</div>
-      <div class="edu-school">Intern · Seoul, South Korea</div>
+      <div class="edu-school">Intern · Hwaseong, South Korea</div>
       <div class="edu-note">Contributed to an electric vehicle commercialization project, focusing on the development and implementation of a battery swapping system.</div>
     </div>
   </div>
