@@ -150,6 +150,8 @@
   }
   .sidebar-ext-link:hover { color: #e4f0e8; background: rgba(122,170,136,0.2); text-decoration: none; }
 
+  .mobile-gallery-link { display: none; }
+
   /* ── MAIN / RIGHT RAIL LAYOUT ── */
   .content-stage {
     min-width: 0;
@@ -473,6 +475,7 @@
     .sidebar-nav { display: none; }
     .sidebar-divider { display: none; }
     .sidebar-links { flex-direction: row; }
+    .mobile-gallery-link { display: flex; } /* mobile gallery */
 
     .content-layout {
       display: block;
@@ -537,6 +540,7 @@
     <a href="https://scholar.google.com/citations?user=CZffOAIAAAAJ&hl=en" target="_blank" class="sidebar-ext-link">🎓 Scholar</a>
     <a href="https://www.linkedin.com/in/eunzomi/" target="_blank" class="sidebar-ext-link">💼 LinkedIn</a>
     <a href="Eunjeong_CV.pdf" target="_blank" class="sidebar-ext-link">↓ CV (PDF)</a>
+    <a href="#" id="open-gallery-mobile" class="sidebar-ext-link mobile-gallery-link">📷 Photos</a>
   </div>
 </aside>
 
@@ -1047,6 +1051,14 @@
     e.preventDefault();
     openGallery();
   });
+
+  const mobileGalleryLink = document.getElementById('open-gallery-mobile');
+  if (mobileGalleryLink) {
+    mobileGalleryLink.addEventListener('click', e => {
+      e.preventDefault();
+      openGallery();
+    });
+  }
   document.getElementById('close-gallery').addEventListener('click', () => {
     closeGallery();
     window.scrollTo({ top: 0, behavior: 'smooth' });
