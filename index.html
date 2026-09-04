@@ -132,9 +132,10 @@
   .sidebar-nav a#open-gallery {
     margin-top: 0.8rem;
     color: #8ab898;
-    font-size: 0.78rem;
+    font-size: 0.71rem;
+    white-space: nowrap;
     border-top: 1px solid #2a4a34;
-    padding-top: 0.7rem;
+    padding: 0.7rem 0.35rem 0.38rem;
   }
   .sidebar-nav a#open-gallery:hover {
     background: rgba(122,170,136,0.15);
@@ -178,9 +179,11 @@
   /* ── LATEST / NEWS ── */
   .latest-rail {
     align-self: start;
-    border-left: 1px solid var(--border);
-    padding-left: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
     margin-top: 0.15rem;
+    background: rgba(255,255,255,0.72);
   }
 
   .latest-mobile {
@@ -554,8 +557,10 @@
     .latest-mobile {
       display: block;
       margin: -1.7rem 0 3.2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.72);
     }
 
     .latest-mobile .latest-item {
@@ -655,7 +660,7 @@
     </div>
 
 <div style="margin-top:1.5rem;">
-      <p class="sec-label" style="margin-bottom:0.8rem;">// Life Outside Research</p>
+      <p class="sec-label" style="margin-bottom:0.8rem;">Life Outside Research</p>
       <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
         <span class="kw">✈️ Travel (over 30 countries!)</span>
         <span class="kw">📷 Photography</span>
@@ -667,7 +672,7 @@
     </div>
 
 <div style="margin-top:1.2rem;">
-      <p class="sec-label" style="margin-bottom:0.8rem;">// Languages</p>
+      <p class="sec-label" style="margin-bottom:0.8rem;">Languages</p>
       <div style="display:flex; gap:0.5rem;">
         <span class="kw">
           <img src="https://flagcdn.com/w20/kr.png" class="flag-icon" alt="South Korea">
@@ -684,7 +689,7 @@
 
   <!-- ── MOBILE LATEST: shown below About only on small screens ── -->
   <section class="latest-mobile" aria-label="Latest research updates">
-    <div class="latest-heading">// Latest</div>
+    <div class="latest-heading">Latest</div>
     <div class="latest-list">
   
       <div class="latest-item">
@@ -711,9 +716,10 @@
   </section>
   <!-- PUBLICATIONS & PRESENTATIONS -->
   <section id="research" class="sec reveal">
-    <p class="sec-label">// Research &amp; Publications</p>
-    <h2 class="sec-title">Publications</h2>
+        <h2 class="sec-title">Publications</h2>
     <!-- Put thumbnail images in your repo, e.g. images/papers/phase_gnn_thumb.jpg and images/papers/freeform_thumb.jpg -->
+
+    <p class="sec-label" style="margin-bottom:0.4rem;">Journal Papers</p>
 
     <div class="pub-item with-thumb">
       <div class="pub-thumb">
@@ -747,7 +753,7 @@
     </div>
 
     <div style="margin-top:2.5rem;">
-      <p class="sec-label">// Conference Presentations</p>
+      <p class="sec-label">Conference Presentations</p>
 
       <div class="pub-item">
         <div class="pub-meta">
@@ -761,7 +767,7 @@
 
       <div class="pub-item">
         <div class="pub-meta">
-          <span class="pub-badge accepted">Conference · Accepted</span>
+          <span class="pub-badge conf">Conference</span>
           <span class="pub-year">04.2026</span>
         </div>
         <div class="pub-title">Physics-Informed Graph Attention Networks for Accurate Multi-Phase Prediction in Ag–Bi–Cu–Sn Alloys</div>
@@ -793,11 +799,10 @@
 
   <!-- EXPERIENCE -->
 <section id="experience" class="sec reveal">
-  <p class="sec-label">// Industry Experience</p>
-  <h2 class="sec-title">Experience</h2>
+    <h2 class="sec-title">Experience</h2>
 
   <div class="edu-item">
-    <div class="edu-year">May 2026 – Present</div>
+    <div class="edu-year">May&nbsp;2026&nbsp;–<wbr> Present</div>
     <div>
       <div class="edu-degree">The Pennsylvania State University</div>
       <div class="edu-school">Graduate Research Assistant · University Park, PA, USA</div>
@@ -806,7 +811,7 @@
   </div>
 
   <div class="edu-item">
-    <div class="edu-year">Aug. 2022 – Jul. 2025</div>
+    <div class="edu-year">Aug.&nbsp;2022&nbsp;–<wbr> Jul.&nbsp;2025</div>
     <div>
       <div class="edu-degree">Samsung Electronics</div>
       <div class="edu-school">R&amp;D Engineer · Semiconductor R&amp;D Center · Hwaseong, South Korea</div>
@@ -818,7 +823,7 @@
   </div>
 
   <div class="edu-item">
-    <div class="edu-year">Aug. 2020 – Aug. 2022</div>
+    <div class="edu-year">Aug.&nbsp;2020&nbsp;–<wbr> Aug.&nbsp;2022</div>
     <div>
       <div class="edu-degree">Korea Advanced Institute of Science and Technology (KAIST)</div>
       <div class="edu-school">Graduate Research Assistant · Daejeon, South Korea</div>
@@ -827,7 +832,7 @@
   </div>
 
   <div class="edu-item">
-    <div class="edu-year">Mar. 2020 – Jul. 2020</div>
+    <div class="edu-year">Mar.&nbsp;2020&nbsp;–<wbr> Jul.&nbsp;2020</div>
     <div>
       <div class="edu-degree">Inha University – 3D Printing &amp; Laser Cutting Center</div>
       <div class="edu-school">Student Assistant · Incheon, South Korea</div>
@@ -836,7 +841,7 @@
   </div>
 
   <div class="edu-item">
-    <div class="edu-year">Sep. 2019 – Dec. 2019</div>
+    <div class="edu-year">Sep.&nbsp;2019&nbsp;–<wbr> Dec.&nbsp;2019</div>
     <div>
       <div class="edu-degree">KIA Motors</div>
       <div class="edu-school">Intern · Hwaseong, South Korea</div>
@@ -848,11 +853,10 @@
 
   <!-- EDUCATION -->
   <section id="education" class="sec reveal">
-    <p class="sec-label">// Education</p>
-    <h2 class="sec-title">Education</h2>
+        <h2 class="sec-title">Education</h2>
 
     <div class="edu-item">
-      <div class="edu-year">Aug. 2025 – May 2029</div>
+      <div class="edu-year">Aug.&nbsp;2025&nbsp;–<wbr> May&nbsp;2029</div>
       <div>
         <div class="edu-degree">Ph.D. in Mechanical Engineering</div>
         <div class="edu-school">The Pennsylvania State University · PA, USA</div>
@@ -863,7 +867,7 @@
     </div>
 
     <div class="edu-item">
-      <div class="edu-year">Sep. 2020 – Aug. 2022</div>
+      <div class="edu-year">Sep.&nbsp;2020&nbsp;–<wbr> Aug.&nbsp;2022</div>
       <div>
         <div class="edu-degree">M.S. in Mechanical Engineering</div>
         <div class="edu-school">Korea Advanced Institute of Science and Technology (KAIST) · Daejeon, South Korea</div>
@@ -874,7 +878,7 @@
     </div>
 
     <div class="edu-item">
-      <div class="edu-year">Feb. 2017 – Aug. 2020</div>
+      <div class="edu-year">Feb.&nbsp;2017&nbsp;–<wbr> Aug.&nbsp;2020</div>
       <div>
         <div class="edu-degree">B.S. in Mechanical Engineering</div>
         <div class="edu-school">Inha University · Incheon, South Korea</div>
@@ -884,7 +888,7 @@
 
     <!-- HONORS & AWARDS -->
     <div class="awards-list" style="margin-top:1.5rem;">
-      <p class="sec-label" style="margin-bottom:0.55rem;">// Honors &amp; Awards</p>
+      <p class="sec-label" style="margin-bottom:0.55rem;">Honors &amp; Awards</p>
 
       <div class="edu-item">
         <div class="edu-year">Aug. 2025</div>
@@ -940,13 +944,12 @@
 
   <!-- MENTORING & SERVICE -->
   <section id="service" class="sec reveal">
-    <p class="sec-label">// Mentoring &amp; Service</p>
-    <h2 class="sec-title">Mentoring &amp; Academic Service</h2>
+        <h2 class="sec-title">Mentoring &amp; Academic Service</h2>
 
     <div style="margin-bottom:2rem;">
       <div class="service-tag-row"><span class="pub-badge mentor">Research Mentoring</span></div>
 <div class="edu-item">
-      <div class="edu-year">Mar. 2026 – Present</div>
+      <div class="edu-year">Mar.&nbsp;2026&nbsp;–<wbr> Present</div>
       <div>
         <div class="edu-degree">Juliet Rueda</div>
         <div class="edu-school">High School Researcher (11th Grade)</div>
@@ -971,8 +974,7 @@
 
   <!-- SKILLS -->
 <section id="skills" class="sec reveal">
-  <p class="sec-label">// Skills &amp; Tools</p>
-  <h2 class="sec-title">Skills</h2>
+    <h2 class="sec-title">Skills</h2>
 
   <div style="display:flex; flex-direction:column; gap:1.5rem;">
     <div>
@@ -1037,7 +1039,7 @@
 
 <!-- ── RIGHT-SIDE LATEST RAIL ── -->
 <div class="latest-rail" aria-label="Latest research updates">
-  <div class="latest-heading">// Latest</div>
+  <div class="latest-heading">Latest</div>
   <div class="latest-list">
     <div class="latest-item">
       <div class="latest-date">2026</div>
