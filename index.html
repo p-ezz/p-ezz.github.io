@@ -84,7 +84,7 @@
   /* ── LAYOUT ── */
   .page-wrap {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 205px 1fr;
     min-height: 100vh;
     align-items: start;
   }
@@ -92,7 +92,7 @@
   /* ── SIDEBAR ── */
   aside {
   position: sticky; top: 0; height: 100vh;
-  padding: 4rem 1.8rem;
+  padding: 4rem 1.6rem;
   display: flex; flex-direction: column;
   background: #1a3024;
   border-right: 1px solid #2a4a34;
@@ -352,9 +352,24 @@
     padding: 0.15rem 0.5rem; border-radius: 3px;
     text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid;
   }
-  .pub-badge.prep    { color: #8a5a00; border-color: #ddb96a; background: #fdf8ec; }
-  .pub-badge.conf    { color: #1a5c32; border-color: #7dba96; background: #f0faf4; }
-  .pub-badge.journal { color: var(--accent); border-color: #9ab0ec; background: var(--accent-lt); }
+  .pub-badge.prep     { color: #8a5a00; border-color: #ddb96a; background: #fdf8ec; }
+  .pub-badge.conf     { color: #1a5c32; border-color: #7dba96; background: #f0faf4; }
+  .pub-badge.accepted { color: #9a3f52; border-color: #dda1ad; background: #fdf0f2; }
+  .pub-badge.journal  { color: var(--accent); border-color: #9ab0ec; background: var(--accent-lt); }
+  .pub-badge.mentor   { color: #1a5c32; border-color: #7dba96; background: #f0faf4; }
+  .pub-badge.service  { color: var(--accent); border-color: #9ab0ec; background: var(--accent-lt); }
+
+  .service-tag-row {
+    margin-bottom: 0.65rem;
+  }
+
+  .awards-list .edu-item {
+    padding: 0.8rem 0;
+  }
+
+  .awards-list .edu-school {
+    margin-bottom: 0.18rem;
+  }
   .pub-year { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); }
   .pub-title { font-family: var(--font-serif); font-size: 0.96rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.3rem; }
   .pub-title a {
@@ -736,7 +751,7 @@
 
       <div class="pub-item">
         <div class="pub-meta">
-          <span class="pub-badge conf"> Conference · Accepted</span>
+          <span class="pub-badge accepted">Conference · Accepted</span>
           <span class="pub-year">04.2027</span>
         </div>
         <div class="pub-title">Out-of-Distribution Phase Equilibrium Prediction Using Physics-Informed Graph Attention Networks</div>
@@ -746,7 +761,7 @@
 
       <div class="pub-item">
         <div class="pub-meta">
-          <span class="pub-badge conf">Conference</span>
+          <span class="pub-badge accepted">Conference · Accepted</span>
           <span class="pub-year">04.2026</span>
         </div>
         <div class="pub-title">Physics-Informed Graph Attention Networks for Accurate Multi-Phase Prediction in Ag–Bi–Cu–Sn Alloys</div>
@@ -868,8 +883,8 @@
     </div>
 
     <!-- HONORS & AWARDS -->
-    <div style="margin-top:2rem;">
-      <p class="sec-label" style="margin-bottom:0.8rem;">// Honors &amp; Awards</p>
+    <div class="awards-list" style="margin-top:1.5rem;">
+      <p class="sec-label" style="margin-bottom:0.55rem;">// Honors &amp; Awards</p>
 
       <div class="edu-item">
         <div class="edu-year">Aug. 2025</div>
@@ -929,7 +944,7 @@
     <h2 class="sec-title">Mentoring &amp; Academic Service</h2>
 
     <div style="margin-bottom:2rem;">
-      <p class="skill-group-title">Research Mentoring</p>
+      <div class="service-tag-row"><span class="pub-badge mentor">Research Mentoring</span></div>
 <div class="edu-item">
       <div class="edu-year">Mar. 2026 – Present</div>
       <div>
@@ -943,9 +958,9 @@
     </div>
 
     <div>
-      <p class="skill-group-title">Academic Service</p>
+      <div class="service-tag-row"><span class="pub-badge service">Academic Service</span></div>
 <div class="edu-item">
-      <div class="edu-year">2026</div>
+      <div class="edu-year">08.2026</div>
       <div>
         <div class="edu-degree">Peer Reviewer</div>
         <div class="edu-school">Engineering Applications of Artificial Intelligence (EAAI)· Elsevier</div>
