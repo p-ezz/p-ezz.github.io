@@ -291,8 +291,16 @@
     margin-bottom: 1.8rem;
   }
   .hero-name-block h1 {
-    font-family: var(--font-serif); font-size: clamp(2rem, 3vw, 2.8rem);
-    font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem;
+    font-family: var(--font-serif); font-size: clamp(1.85rem, 2.7vw, 2.55rem);
+    font-weight: 700; line-height: 1.1; margin-bottom: 0.18rem;
+  }
+
+  .hero-english-name {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 0.55rem;
   }
   .hero-position { font-size: 0.86rem; color: var(--text-mid); line-height: 1.65; }
   .hero-position strong { color: var(--text); font-weight: 500; }
@@ -346,6 +354,15 @@
   .edu-school { font-size: 0.84rem; color: var(--text-mid); margin-bottom: 0.35rem; }
   .edu-note { font-size: 0.78rem; color: var(--muted); font-style: italic; }
 
+  .award-type {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 0.25rem;
+    white-space: nowrap;
+  }
+
   /* ── PUBLICATIONS ── */
   .pub-item { padding: 1.4rem 0; border-bottom: 1px solid var(--border); }
   .pub-item:last-child { border-bottom: none; }
@@ -360,7 +377,7 @@
   .pub-badge.accepted { color: #9a3f52; border-color: #dda1ad; background: #fdf0f2; }
   .pub-badge.journal  { color: var(--accent); border-color: #9ab0ec; background: var(--accent-lt); }
   .pub-badge.mentor   { color: #1a5c32; border-color: #7dba96; background: #f0faf4; }
-  .pub-badge.service  { color: var(--accent); border-color: #9ab0ec; background: var(--accent-lt); }
+  .pub-badge.service  { color: #1a5c32; border-color: #7dba96; background: #f0faf4; }
 
   .service-tag-row {
     margin-bottom: 0.65rem;
@@ -636,6 +653,7 @@
       </div>
       <div class="hero-name-block">
         <h1>Eunjeong Park</h1>
+        <div class="hero-english-name">Enna</div>
         <div class="hero-position">
           <strong>Ph.D. Student</strong><br>
           Department of Mechanical Engineering<br>
@@ -911,7 +929,7 @@
       <div class="edu-item">
         <div class="edu-year">Feb. 2020</div>
         <div>
-          <div class="edu-degree">Best Award · Super Challenge Hackerton</div>
+          <div class="edu-degree">Super Challenge Hackerton <span class="award-type">(Best Award)</span></div>
           <div class="edu-school">Inha University Start-up Center</div>
         </div>
       </div>
@@ -919,7 +937,7 @@
       <div class="edu-item">
         <div class="edu-year">Feb. 2019</div>
         <div>
-          <div class="edu-degree">Honorable Mention · University Simulation Competition</div>
+          <div class="edu-degree">University Simulation Competition <span class="award-type">(Honorable Mention)</span></div>
           <div class="edu-school">MSC Software</div>
         </div>
       </div>
@@ -927,7 +945,7 @@
       <div class="edu-item">
         <div class="edu-year">Oct. 2018</div>
         <div>
-          <div class="edu-degree">Grand Prize · 3D Printing Creative Competition</div>
+          <div class="edu-degree">3D Printing Creative Competition <span class="award-type">(Grand Prize)</span></div>
           <div class="edu-school">KSPSE</div>
         </div>
       </div>
@@ -935,7 +953,7 @@
       <div class="edu-item">
         <div class="edu-year">Sep. 2018</div>
         <div>
-          <div class="edu-degree">Grand Prize · Comprehensive Design Competition</div>
+          <div class="edu-degree">Comprehensive Design Competition <span class="award-type">(Grand Prize)</span></div>
           <div class="edu-school">Inha University Innovation Center</div>
         </div>
       </div>
