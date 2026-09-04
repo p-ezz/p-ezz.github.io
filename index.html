@@ -4,7 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Eunjeong — PhD Researcher</title>
+<meta name="description" content="Eunjeong Park — Ph.D. researcher working on AI for materials, additive manufacturing, and computational materials science.">
 
+<meta property="og:title" content="Eunjeong Park | Ph.D. Researcher">
+<meta property="og:description" content="AI for Materials · Additive Manufacturing · Machine Learning · Generative AI">
+<meta property="og:url" content="https://p-ezz.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://p-ezz.github.io/Eunjeong_profile.jpg">
+  
 <!-- ★ Google Analytics: replace G-XXXXXXXXXX with your Measurement ID -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCYKNSGCG4"></script>
 <script>
@@ -1102,8 +1109,16 @@
       const grid = document.querySelector('.gallery-grid');
       grid.innerHTML = '';
       for (let i = photoCount; i >= 1; i--) {
-      grid.innerHTML += `<div class="gallery-item" onclick="openLightbox('photos/photo(${i}).JPG')"><img src="photos/photo(${i}).JPG" alt=""></div>`;
-      }
+      grid.innerHTML += `
+        <div class="gallery-item" onclick="openLightbox('photos/photo(${i}).JPG')">
+          <img
+            src="photos/photo(${i}).JPG"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            onerror="this.parentElement.remove()"
+          >
+        </div>`;
     </script>
   </div>
 </div><!-- gallery-panel -->
