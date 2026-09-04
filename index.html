@@ -1109,16 +1109,17 @@
       const grid = document.querySelector('.gallery-grid');
       grid.innerHTML = '';
       for (let i = photoCount; i >= 1; i--) {
-      grid.innerHTML += `
-        <div class="gallery-item" onclick="openLightbox('photos/photo(${i}).JPG')">
-          <img
-            src="photos/photo(${i}).JPG"
-            alt=""
-            loading="lazy"
-            decoding="async"
-            onerror="this.parentElement.remove()"
-          >
-        </div>`;
+        grid.innerHTML += `
+          <div class="gallery-item" onclick="openLightbox('photos/photo(${i}).JPG')">
+            <img
+              src="photos/photo(${i}).JPG"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              onerror="this.parentElement.remove()"
+            >
+          </div>`;
+      }
     </script>
   </div>
 </div><!-- gallery-panel -->
